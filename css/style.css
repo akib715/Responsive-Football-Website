@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ---------------- global css -----------------*/
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    width: 100vw;
+}
+.container{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+     align-items: center;
+    justify-content: center;
+    min-height: 700px;
+    margin: auto;
+}
+.col-6{
+width: 50%;
+}
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-4{
+    width: 29.33%;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 3px -1px 18px -1px rgba(160,160,160,0.62);
+
+}
+.btn{
+    padding: 9px 15px;
+    border: none;
+     background-color: #E02C6D;
+    color: #ffffff;
+}
+.btn:hover{
+ background-color: #ce0a52;
+}
+.btn i{
+    margin-left: 5px;
+}
+h2{
+line-height: 90px;
+}
+.left{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.right{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+
+
+/* ----------------- header css ----------*/ 
+.header-wrapper{
+    background-color: #2D25A0;
+    margin-bottom: 60px;
+}
+
+.header-img{
+    width: 100%;
+}
+.header-img:hover.header-img img{
+transform: translate(0px,-20px);
+transition: all 0.4s  ease ;
+}
+img{
+    width: 100%;
+}
+.header-text{
+    padding: 30px 70px 30px 0px;
+}
+.header-text h2{
+font-size: 4rem;
+color: #ffffff;
+
+}
+.header-btn{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+
+
+/*-------  inner-section  ----------*/
+.inner-section{
+    margin-bottom: 60px;
+}
+/* .inner-section .container{
+    flex-direction: column;
+} */
+
+.card-text h5{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.card-text p{
+    color: #6C6C6C;
+    font-weight: 100;
+}
+
+/*--------- highlight ---------*/
+
+
+
+.highlight-wrapper .left{
+    align-items: flex-start;
+}
+.highlight-text h2{
+font-size: 45px;
+line-height: 60px;
+text-align: left;
+
+}
+
+.highlight-text h2 span{
+    display: block;
+}
+.highlight-description{
+    padding: 15px 130px 30px 0px;
+
+}
+
+
+/*------------------ football section ------------*/
+
+.football{
+    margin-bottom:40px  ;
+
+}
+
+.football .container{
+    min-height: auto;
+}
+.football img{
+    width: 450px;
+}
+
+
+/* ---------------------logo---------------  */
+
+.logo-section{
+    margin: 30px 0px;
+}
+
+.logo i{
+    margin: 10px;
+    font-size: 20px;
+    color: #6C6C6C;
+   
+    
+}
+
+/*--------------------- legal-section ----------------*/
+.legal-section .left{
+margin-right: 50px;
+}
+.legal-section{
+    margin-bottom: 60px;
+}
+.legal-section span{
+margin-left: 5px;
+display: block;
+
+margin-top: 20px;
+}
+.legal-section span a{
+    /* text-decoration: none; */
+    color: #6C6C6C;
+}
+/*---------------- footer -------------*/
+
+footer{
+    margin: 50px 0;
+}
+
+
+
+
+/*--------------------------- responsive ---------------------*/
+
+
+
+
+@media (max-width: 1200px) { 
+
+/* ---------------- global css -----------------*/
+
+.col-4{
+    width: 45%;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 3px -1px 18px -1px rgba(160,160,160,0.62);
+
+}
+
+
+
+
+/* ----------------- header css ----------*/ 
+.header-wrapper{
+    background-color: #2D25A0;
+    margin-bottom: 60px;
+}
+.header-text{
+    padding: 30px 40px 30px 0px;
+}
+.header-text h2{
+font-size: 2.7rem;
+line-height: 70px;
+
+}
+
+/*--------------------- legal notice---------------*/
+.legal-section{
+    margin-bottom: 60px;
+}
+.legal-section span{
+margin-left: 70px;
+display: block;
+}
+
+
+ } 
+ 
+@media (max-width: 992px) { 
+
+
+.col-4{
+    width: 70%;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 3px -1px 18px -1px rgba(160,160,160,0.62);
+
+}
+.left{
+    width: 100%;
+    margin-bottom: 40px !important;
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-bottom: 20px;
+}
+.right{
+    width: 100%;
+    margin-bottom: 40px !important;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+/* ----------------- header css ----------*/ 
+.header-wrapper{
+    background-color: #2D25A0;
+    margin-bottom: 60px;
+}
+.header-text{
+    padding: 30px 40px 30px 0px;
+}
+.header-text h2{
+font-size: 2.7rem;
+line-height: 70px;
+
+}
+/*----------------football-----------------*/
+.football img{
+    width: 200px;
+}
+  /*--------------------- legal notice---------------*/
+.legal-section span{
+margin-left: 70px;
+display: block;
+}  
+}
+
+
+
+
